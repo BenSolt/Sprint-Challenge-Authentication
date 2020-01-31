@@ -3,7 +3,7 @@ const router = require('express').Router();
 ////added
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const Users = require() // what put into ()  here??????????? cant find users-model...
+const Users = require('../users/users-model') // added users folder -> users-model file.. since dont see it.
 
 //add this route 
 const {jwtSecret} = require('./config/secrets')
