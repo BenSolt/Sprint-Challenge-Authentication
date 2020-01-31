@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const Users = require('../users/users-model') // added users folder -> users-model file.. since dont see it.
 
 //add this route 
-const {jwtSecret} = require('./config/secrets')
+const {jwtSecret} = require('../config/secrets')
 
 router.post('/register', (req, res) => {
   // implement registration//////////////////////
